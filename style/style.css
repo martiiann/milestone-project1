@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FADADD;
+  }
+
+  .bg-pink {
+    background-color: #FADADD;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  #about img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #gallery img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+  }
+
+  /* Center the text on the image */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 10;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); 
+}
+
+/* Style the image */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* Add some margin to make the image and text centered nicely */
+.container {
+    margin-top: 50px;
+}
+
+/* logo */
+.navbar {
+  height: 80px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem
+}
+.logo {
+  height: 60px; 
+  width: auto; 
+  display: block;
+  padding: 0; 
+  margin: 0; 
+  margin-top: -35px;
+}
+
+.navbar-nav .nav-link {
+  line-height: 70px;
+}
