@@ -1,12 +1,38 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #FADADD;
+    background: linear-gradient(135deg, #f7cac9, #ffe5e5);
+
   }
 
-  .bg-pink {
-    background-color: #FADADD;
-  }
-  
+  button:hover, a:hover {
+    background-color: #7a2c2c;
+    color: white;
+    transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.navbar a {
+  padding: 10px 15px;  
+  transition: all 0.2s ease;
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  border: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.navbar a:hover {
+  padding: 1px 3px;
+  background-color: #f7cac9;
+}
+
+
   header h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -15,11 +41,13 @@ body {
   #about img {
     max-width: 100%;
     height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   #gallery img {
     max-width: 100%;
     height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   footer {
@@ -45,6 +73,7 @@ body {
     max-width: 100%;
     height: auto;
     position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Add some margin to make the image and text centered nicely */
@@ -52,13 +81,14 @@ body {
     margin-top: 50px;
 }
 
-/* logo */
+
 .navbar {
   height: 80px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem
 }
-.logo {
+/* logo */
+.logo-img {
   height: 60px; 
   width: auto; 
   display: block;
@@ -70,3 +100,23 @@ body {
 .navbar-nav .nav-link {
   line-height: 70px;
 }
+
+.tech-img{
+  max-width: 100%; /* Ensures the image fills its column */
+  height: auto; /* Keeps image aspect ratio */
+}
+
+.text-start {
+  padding-left: 20px; /* Adds some padding to create space between image and text */
+}
+
+@media (max-width: 768px) {
+  .tech-img {
+      margin-bottom: 15px; /* Adds space below the image on smaller screens */
+  }
+  .text-start {
+      padding-left: 0; /* Removes padding on smaller screens */
+      text-align: center; /* Centers text on smaller screens */
+  }
+}
+
