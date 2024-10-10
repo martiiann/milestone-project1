@@ -89,6 +89,7 @@ img:hover {
 }
 /* logo */
 .logo-img {
+  filter: brightness(0) invert(0);
   height: 60px; 
   width: auto; 
   display: block;
