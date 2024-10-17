@@ -4,12 +4,46 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-
-
-
-
-  /*background: linear-gradient(to right, #FFB6C1, #98FB98);*/
 }
+
+.transparent-background {
+  background-color: rgba(255, 255, 255, 0.5); 
+  border-radius: 10px; 
+  padding: 20px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  margin-top: 20px; 
+  width: 100%; 
+  max-width: 600px; 
+  height: auto; 
+  position: relative; 
+}
+
+html, body {
+  height: 100%; /* Ensures that the body takes full height */
+  margin: 0; /* Removes default margin */
+}
+
+/* Flexbox for body to push footer to the bottom */
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex: 1; /* Makes the section grow and take the remaining space */
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+  
+  
+  
+     /* background: linear-gradient(to right, #FFB6C1, #98FB98); */
   
 
 img:hover {
@@ -34,14 +68,6 @@ img:hover {
   background-color: #f7cac9;
 }
 
-.transparent-background {
-  background-color: rgba(255, 255, 255, 0.3); /* White background with 80% opacity */
-  border-radius: 10px; /* Optional: Rounded corners */
-  padding: 20px; /* Optional: Add some padding */
-  backdrop-filter: blur(5px); /* Optional: Adds a blur effect behind the background */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
-  margin-top: 15px; /* Space above the transparent background */
-}
 
   header h1 {
     font-size: 3rem;
@@ -63,6 +89,8 @@ img:hover {
   footer {
     background-color: #333;
     color: white;
+    text-align: center;
+    padding: 10px 0;
   }
 
   /* Center the text on the image */
