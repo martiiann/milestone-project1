@@ -11,36 +11,189 @@ body {
   border-radius: 10px; 
   padding: 20px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-  margin-top: 20px; 
+  margin-top: -20px; 
   width: 100%; 
   max-width: 600px; 
   height: auto; 
   position: relative; 
 }
 
-html, body {
-  height: 100%; /* Ensures that the body takes full height */
-  margin: 0; /* Removes default margin */
+/* Fade-in and Slide-up for Heading */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Flexbox for body to push footer to the bottom */
-.d-flex {
-  display: flex;
-  flex-direction: column;
+#gallery h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  background-color: rgba(255, 105, 180, 0.8); /* Transparent pink */
+  padding: 10px;
+  border-radius: 10px;
+  animation: fadeSlideUp 1.5s ease-in-out;
 }
 
-.flex-grow-1 {
-  flex: 1; /* Makes the section grow and take the remaining space */
+/* Bounce-in for Image Captions */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-.footer {
-  background-color: #333;
+#gallery p {
+  font-size: 1rem;
+  color: #333;
+  background-color: rgba(255, 105, 180, 0.8); /* Transparent pink */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  animation: bounceIn 1s ease-in-out;
+  animation-delay: 0.3s;
+  display: inline-block;
+}
+
+/* Pulse for Button Text */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+#price-button {
+  font-size: 1.2rem;
   color: white;
-  text-align: center;
-  padding: 10px 0;
+  background-color: #ff69b4; /* Hot Pink */
+  border: none;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  animation: pulse 2s infinite;
 }
 
-  
+#price-button:hover {
+  background-color: #ff85c4; /* Lighter Pink */
+}
+
+
+/* Glowing Multicolor Text Animation for Heading */
+@keyframes multicolorGlow {
+  0% {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+  }
+  25% {
+    color: #ff69b4;
+    text-shadow: 0 0 10px #ff85c4, 0 0 20px #ff85c4, 0 0 30px #ff85c4;
+  }
+  50% {
+    color: #000000;
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+  }
+  75% {
+    color: #ff69b4;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+  }
+  100% {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+  }
+}
+
+#gallery h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  background-color: rgba(255, 105, 180, 0.8); /* Transparent pink */
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff; /* Starting color */
+  animation: multicolorGlow 3s infinite ease-in-out;
+}
+
+
+}
+
+#gallery .img-fluid {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#gallery .img-fluid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#gallery .row {
+  margin-top: 30px;
+}
+
+#gallery p {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+#gallery .col-md-4 {
+  margin-bottom: 30px;
+}
+
+.text-center h2 {
+  background-color: rgba(255, 105, 180, 0.8); /* Transparent pink */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background-color: #ff69b4; /* Bright pink */
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 50px;
+}
+
+.btn-primary:hover {
+  background-color: #ff1493; /* Darker pink */
+  transform: scale(1.05);
+}
+
+
+.btn-primary:hover {
+  background-color: #ff1493; /* Darker pink for hover effect 
+  transform: scale(1.05); Slightly increase size on hover */
+}
   
   
      /* background: linear-gradient(to right, #FFB6C1, #98FB98); */
@@ -89,8 +242,7 @@ img:hover {
   footer {
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 10px 0;
+    
   }
 
   /* Center the text on the image */
