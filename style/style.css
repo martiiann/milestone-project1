@@ -1,7 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #FFB6C1, #98FB98);
-  }
+  font-family: Arial, sans-serif;
+  background-image: url('../assets/img/IMG_2039.PNG') !important; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+
+
+
+  /*background: linear-gradient(to right, #FFB6C1, #98FB98);*/
+}
+  
 
 img:hover {
   transform: scale(1.05);
@@ -25,6 +34,14 @@ img:hover {
   background-color: #f7cac9;
 }
 
+.transparent-background {
+  background-color: rgba(255, 255, 255, 0.3); /* White background with 80% opacity */
+  border-radius: 10px; /* Optional: Rounded corners */
+  padding: 20px; /* Optional: Add some padding */
+  backdrop-filter: blur(5px); /* Optional: Adds a blur effect behind the background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+  margin-top: 15px; /* Space above the transparent background */
+}
 
   header h1 {
     font-size: 3rem;
