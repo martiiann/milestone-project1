@@ -1,110 +1,175 @@
 body {
   font-family: 'Bebas Neue', sans-serif;
-  background-image: url('../assets/img/IMG_2039.PNG'); /* Set the actual background image */
+  background-image: url('../assets/img/IMG_2039.PNG');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  color: #fff; /* Set text color */
 }
 
-/* Navbar */
+/* Navbar styles */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.9); /* Keep navbar transparent */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
 }
 
-/* Logo */
+.navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  color: #000;
+  padding: 8px 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff69b4; /* Change color on hover */
+}
+
+.navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler-icon {
+  color: #000; /* Color of the toggler icon */
+}
+
 .logo-img {
-  height: 50px; /* Adjust size as necessary */
-  width: auto;
+  height: 50px;
+  display: block;
+  margin: auto;
+  filter: grayscale(1) brightness(0) contrast(1000%); /* Converts red to black */
+}
+
+/* Main heading */
+.welcome-text {
+  font-size: 48px; /* Consistent with design */
+  color: white; /* Text color */
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  border-radius: 10px;
+  margin-top: 100px; /* Move it below the navbar */
+  margin-bottom: 40px; /* Space below the text */
+  text-shadow: 2px 2px #000; /* Shadow for better readability */
+}
+
+/* Separator style for better text presentation */
+.separator {
+  height: 2px;
+  background-color: #ff69b4; /* Pink color for the separator */
+  margin: 20px 0; /* Margin around the separator */
+  border-radius: 5px; /* Rounded edges for the separator */
 }
 
 /* Image Container */
 .image-container {
   width: 100%; /* Full width of the page */
-  max-width: 1200px; /* Max width for large screens, adjust as necessary */
+  max-width: 1200px; /* Max width for large screens */
   margin: 0 auto; /* Center the container */
   padding: 20px 0; /* Add padding for spacing */
 }
 
 /* Hero Image */
 .hero-image {
-  width: 100%; /* Full width of the container */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Center the image */
-  border-radius: 10px; /* Optional: add rounded corners */
-  transition: transform 0.3s ease; /* Animation effect on hover */
+  width: 100%;
+  max-height: 80vh; /* Increased height for larger images */
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 .hero-image:hover {
   transform: scale(1.05); /* Slightly enlarge the image on hover */
 }
 
+.welcome-image{
+  border-radius: 15px;
+}
 
 /* About Section */
 #about {
-  display: flex; /* Use flexbox for layout */
+  display: flex; 
   justify-content: center; /* Center content */
   align-items: center; /* Center vertically */
   padding: 50px; /* Add padding around the section */
   margin-top: 10px; /* Space from the top */
   margin-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.8); /* Set the black background */
-  border-radius: 10px; /* Remove corners */
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
 }
 
 .about-title {
-  font-size: 48px; /* Adjust as necessary */
+  font-size: 30px; 
   font-weight: bold;
-  color: #ff69b4; /* Example color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  animation: fadeIn 1s ease-in; /* Animation */
+  color: white; /* Change color to white */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Add shadow for depth */
+  margin-bottom: 20px; /* Space below title */
 }
+
+.header-container {
+  background-color: rgba(255, 255, 255, 0.2); /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding around text */
+  text-align: center; /* Center text */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.header-title {
+  font-size: 36px; /* Slightly smaller font */
+  color: #fff; /* Pink color for title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+}
+
+.header-tagline {
+  font-size: 18px; /* Adjust tagline size */
+  color: #fff; /* White color for tagline */
+}
+
+
+
 
 .tagline {
   font-size: 24px; /* Smaller size */
   color: #fff; /* Contrast color */
   font-style: italic;
   margin-top: 10px; /* Space between title and tagline */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow for readability */
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-
-/* Make the image responsive */
-#about .img-fluid {
-  max-height: 600px; /* Set to match text height */
-  width: auto; /* Ensure it keeps its aspect ratio */
-  border-radius: 10px; /* Optional: Add a border radius */
-}
-
-/* Style for the text area */
+/* Text area adjustments */
 #about-text {
-  padding: 30px; /* Add padding for the text */
   color: white; /* Text color */
-  text-align: left; /* Align text to the left */
-  font-size: 1.5rem; /* Increase text size */
+  text-align: center; /* Center align text */
+  font-size: 1rem; 
+  background-color: transparent;
 }
 
-
-/* Ensure the images are covered */
-#about .img-fluid {
-  max-height: 600px; /* Set to match text height */
-  width: auto; /* Ensure it keeps its aspect ratio */
-  border-radius: 10px; /* Optional: Add a border radius */
+/* Animation keyframes for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start as invisible */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+  }
 }
 
-
-/* Image size adjustment */
-#about .img-fluid {
-  max-height: 600px; /* Set to match text height */
-  width: auto; /* Ensure it keeps its aspect ratio */
+/* Apply animation to the entire #about-text section */
+#about-text {
+  animation: fadeIn 2s ease forwards; /* Apply fade-in effect */
 }
 
 /* Portfolio Button */
-a.portfolio-button {
-  display: inline-block;
+.portfolio-button {
+  display: block; /* Center the button */
+  margin: 20px auto; /* Center horizontally with margin */
   padding: 10px 20px;
   background-color: #ff69b4; /* Pink */
   color: white;
@@ -112,27 +177,10 @@ a.portfolio-button {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  margin-top: 20px;
 }
 
-a.portfolio-button:hover {
+.portfolio-button:hover {
   background-color: #ff1493; /* Darker pink */
-}
-
-a.portfolio-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ff69b4; /* Pink */
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-a.portfolio-button:hover {
-  background-color: #ff1493; /* Darker pink */
-  transform: scale(1.05); /* Slightly enlarge the button */
 }
 
 /* Footer */
@@ -146,10 +194,84 @@ footer {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .welcome-text {
-    font-size: 32px; /* Adjust for smaller devices */
+    font-size: 28px; /* Smaller font size for mobile */
+    margin-bottom: 10px; /* Adjust space below the text */
+    text-align: center; /* Center align the welcome text */
   }
+
   #about {
     flex-direction: column; /* Stack for small screens */
     align-items: center; /* Center horizontally */
+    padding: 10px; /* Add some padding */
+  }
+
+  .welcome-image {
+    width: 100%; /* Full width of the container */
+    max-height: 60vh; 
+    object-fit: cover; /* Ensure the image covers the area */
+    display: block; /* Center the image */
+    margin: 0; 
+  }
+
+  #about-text {
+    font-size: 1.1rem; 
+    width: 90%; /* Set width to take most of the screen */
+    margin: 10px auto; 
+  }
+}
+
+  .welcome-image {
+    width: 100%; /* Full width on mobile */
+    max-height: 90vh; /* Allow more height on mobile */
+  }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #about {
+    flex-direction: column; /* Stack image above text */
+    align-items: center; /* Center items */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .img-fluid {
+    width: 100%; /* Set the image width to 100% */
+    max-height: 50vh; /* Limit the max height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+  }
+
+  #about-text {
+    margin-top: 15px; /* Space above the text */
+    font-size: 1.2rem; /* Increase text size for readability */
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center; /* Center align text */
+    background-color: rgba(0, 0, 0, 0.7); /* Background for readability */
+    border-radius: 10px; /* Add rounded corners */
+    width: 90%; /* Limit text width */
+  }
+
+  .about-title {
+    font-size: 36px; /* Adjust title size */
+    margin-top: 15px; /* Add some margin on top */
+    text-align: center; /* Center title */
+  }
+
+  .tagline {
+    font-size: 20px; /* Adjust tagline size */
+    text-align: center; /* Center tagline */
+    margin-bottom: 15px; /* Space below tagline */
+  }
+}
+
+/* Media Query for Desktop */
+@media (min-width: 1025px) {
+  .welcome-image {
+    max-height: 100%; /* Adjust height for desktops */
+    width: 69%; 
+  }
+
+  .welcome-text {
+    font-size: 48px; /* Adjust font size for desktop */
   }
 }
