@@ -5,6 +5,13 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   color: #fff; /* Set text color */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  touch-action: pan-x; /* Allow panning only in the x direction */
+  user-select: none; /* Disable text selection */
+}
+
+html {
+  touch-action: pinch-zoom; /* Allow pinch-to-zoom gestures */
 }
 
 /* Navbar styles */
