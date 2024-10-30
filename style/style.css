@@ -5,7 +5,6 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   color: #fff; /* Set text color */
-  overflow-x: hidden;
 }
 
 /* Navbar styles */
@@ -322,14 +321,17 @@ footer {
     width: 90%; /* Set width to take most of the screen */
     margin: 10px auto; 
   }
-}
 
   .welcome-image {
     width: 100%; /* Full width on mobile */
     max-height: 90vh; /* Allow more height on mobile */
     animation: none;
   }
+
+  #about-image {
+    animation: none; /* Disable animation on mobile devices */
   }
+  
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
