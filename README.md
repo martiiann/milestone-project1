@@ -55,9 +55,10 @@ Lashes Room by Riana is a fully responsive website created for a beauty business
 Here are the wireframes for the website:
 
 ![About Page](README-images/About%20Page.png)
-![Contact Page](README-images/Contact.png)
 ![Gallery Page](README-images/Gallery.png)
 ![Price Page](README-images/Price.png)
+![Contact Page](README-images/Contact.png)
+
 
 ## Testing
 - **HTML Validation**: The HTML code was validated using the [W3C Markup Validator](https://validator.w3.org/) with no errors found.
