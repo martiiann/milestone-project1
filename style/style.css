@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   color: #fff; /* Set text color */
+  overflow-x: hidden;
 }
 
 /* Navbar styles */
@@ -302,6 +303,9 @@ footer {
     flex-direction: column; /* Stack for small screens */
     align-items: center; /* Center horizontally */
     padding: 10px; /* Add some padding */
+    width: 100%; 
+    max-width: none; /* Removes any max-width restrictions */
+    margin: 0 auto; /* Center align the element */
   }
 
   .welcome-image {
