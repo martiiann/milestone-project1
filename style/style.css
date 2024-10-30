@@ -5,13 +5,32 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   color: #fff; /* Set text color */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  touch-action: pan-x; /* Allow panning only in the x direction */
-  user-select: none; /* Disable text selection */
 }
 
-html {
-  touch-action: pinch-zoom; /* Allow pinch-to-zoom gestures */
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%; /* Ensure the body takes full width */
+}
+
+.main-container {
+  width: 100%; /* Full width on mobile */
+  max-width: 1200px; /* Adjust for larger screens */
+  margin: 0 auto; /* Center on larger screens */
+}
+
+.image-container {
+  max-width: 100%; /* Ensure image does not overflow */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#about, #pricing {
+  overflow: hidden; /* Prevent content overflow */
+}
+
+#welcome-image {
+  width: 100%; /* Responsive full width */
+  max-height: 80vh; /* Limit max height */
+  object-fit: cover; /* Maintain aspect ratio */
 }
 
 /* Navbar styles */
@@ -32,10 +51,34 @@ html {
   color: #000;
   padding: 8px 15px;
   transition: color 0.3s ease;
+  position: relative; /* Required for the pseudo-element */
+}
+
+/* Add the underline effect for active links */
+.navbar-nav .nav-link.active {
+  color: #ff69b4; /* Optional: Make active link pink */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  height: 2px; /* Thickness of the underline */
+  background: #ff69b4; /* Color of the underline */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px; /* Position below the text */
+  transform: scaleX(0); /* Initially hide the underline */
+  transition: transform 0.3s ease; /* Animation for the underline */
 }
 
 .navbar-nav .nav-link:hover {
   color: #ff69b4; /* Change color on hover */
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  transform: scaleX(1); /* Show underline on hover and for active link */
 }
 
 .navbar-toggler {
