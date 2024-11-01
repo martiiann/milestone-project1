@@ -386,6 +386,15 @@ footer {
     animation: none; /* Disable animation on mobile devices */
   }
   
+  .hero-image {
+    touch-action: none; /* Prevents default touch behaviors */
+    -webkit-user-drag: none; /* Prevents dragging the image */
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures the image behaves like a block element */
+    pointer-events: none; /* Prevents the image from being clicked on */
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
