@@ -247,8 +247,6 @@ footer {
   padding: 10px 0;
 }
 
-
-
 /* Gallery Section */
 #gallery {
   background-color: rgba(0, 0, 0, 0.8); /* Dark background */
@@ -280,7 +278,6 @@ footer {
   font-size: 18px; /* Font size for captions */
   margin-top: 10px; /* Space above captions */
 }
-
 
 /* Separator line */
 .separator {
@@ -342,7 +339,130 @@ footer {
   position: relative; /* Position for absolute text */
 }
 
+/* Contact Page CSS */
+.booking-text {
+  font-size: 32px; /* Consistent with design */
+  color: white; /* Text color */
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  border-radius: 10px;
+  margin-top: 100px; /* Space above */
+  margin-bottom: 40px; /* Space below */
+  text-shadow: 2px 2px #000; /* Shadow for better readability */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Space between social links */
+  margin-bottom: 60px; /* Space below social links */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  padding: 20px; /* Padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.social-link {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.social-link img {
+  width: 50px; /* Icon size */
+  height: 50px; /* Icon size */
+  margin-bottom: 10px; /* Space below icon */
+}
+
+.social-link a {
+  font-size: 18px; /* Font size for links */
+  color: #000; /* Text color */
+  text-decoration: none; /* Remove underline */
+  background-color: #fff; /* White background */
+  padding: 10px 20px; /* Padding for buttons */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.social-link a:hover {
+  background-color: #ddd; /* Change background on hover */
+}
+
+.testimonial-section,
+.why-choose-us,
+.location-section {
+  padding: 50px; /* Padding for sections */
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  margin: 20px; /* Margin for spacing */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center text */
+}
+
+.testimonial-section h2,
+.why-choose-us h2,
+.location-section h2 {
+  font-size: 28px; /* Font size for section headers */
+  margin-bottom: 30px; /* Space below header */
+}
+
+.testimonials,
+.why-choose-us ul {
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center items */
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Space between items */
+}
+
+.testimonial,
+.why-choose-us ul li {
+  background: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+  padding: 15px; /* Padding for items */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.booking-btn {
+  background-color: #ff69b4; /* Pink background */
+  color: white; /* Text color */
+  padding: 10px 30px; /* Padding for buttons */
+  font-size: 20px; /* Font size */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Transition for hover */
+}
+
+.booking-btn:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+}
+
+.location-section iframe {
+  border: 0; /* No border */
+  width: 100%; /* Full width */
+  height: 450px; /* Height for map */
+  border-radius: 10px; /* Rounded corners */
+}
+
 /* Responsive Adjustments */
+
+@media (max-width: 480px) {
+  .social-link a {
+    padding: 8px 15px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .testimonial-section h2,
+  .why-choose-us h2,
+  .location-section h2 {
+    font-size: 20px; /* Adjust header font size */
+  }
+
+  .booking-btn {
+    padding: 6px 15px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+
 @media (max-width: 768px) {
   .welcome-text {
     font-size: 28px; /* Smaller font size for mobile */
@@ -395,6 +515,24 @@ footer {
     pointer-events: none; /* Prevents the image from being clicked on */
 }
 
+.navbar-brand {
+  display: block; /* Display brand as block */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px; /* Adjust font size */
+}
+
+.booking-text {
+  font-size: 24px; /* Adjust font size */
+}
+
+.location-section iframe {
+  height: 350px; /* Adjust height */
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -439,6 +577,19 @@ footer {
     width: 100%; /* Ensure full width */
     max-height: 60vh; /* Adjust max-height for better fit */
     object-fit: cover; /* Maintain aspect ratio */
+  }
+
+  .booking-text {
+    font-size: 28px; /* Adjust font size */
+  }
+
+  .social-links {
+    flex-direction: column; /* Stack on smaller screens */
+    gap: 20px; /* Space between items */
+  }
+
+  .location-section iframe {
+    height: 350px; /* Adjust height */
   }
 }
 
