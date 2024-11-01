@@ -141,6 +141,10 @@ html, body {
 
 .welcome-image{
   border-radius: 15px;
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 70vh; /* Limit max height */
+  object-fit: cover; /* Maintain aspect ratio */
 }
 
 /* About Section */
@@ -192,7 +196,7 @@ html, body {
 }
 
 /* Text area adjustments */
-#about-text {
+#about-text-unique {
   color: white; /* Text color */
   text-align: center; /* Center align text */
   font-size: 1rem; 
@@ -210,7 +214,7 @@ html, body {
 }
 
 /* Apply animation to the entire #about-text section */
-#about-text {
+#about-text-unique {
   animation: fadeIn 2s ease forwards; /* Apply fade-in effect */
 }
 
@@ -366,7 +370,7 @@ footer {
     animation: none;
   }
 
-  #about-text {
+  #about-text-unique {
     font-size: 1.1rem; 
     width: 90%; /* Set width to take most of the screen */
     margin: 10px auto; 
@@ -397,10 +401,9 @@ footer {
     max-height: 50vh; /* Limit the max height */
     object-fit: cover; /* Maintain aspect ratio */
     border-radius: 10px; /* Add rounded corners */
-    animation: none;
   }
 
-  #about-text {
+  #about-text-unique {
     margin-top: 15px; /* Space above the text */
     font-size: 1.2rem; /* Increase text size for readability */
     padding: 20px; /* Add padding for better spacing */
@@ -421,6 +424,12 @@ footer {
     font-size: 20px; /* Adjust tagline size */
     text-align: center; /* Center tagline */
     margin-bottom: 15px; /* Space below tagline */
+  }
+
+  .hero-image {
+    width: 100%; /* Ensure full width */
+    max-height: 60vh; /* Adjust max-height for better fit */
+    object-fit: cover; /* Maintain aspect ratio */
   }
 }
 
