@@ -61,20 +61,35 @@ Here are the wireframes for the website:
 
 
 ## Testing
-- **HTML Validation**: The HTML code was validated using the [W3C Markup Validator](https://validator.w3.org/) with no errors found.
-  
-![Index Test](README-images/Html.png)
+- HTML 
+   - For testing my HTML code, I used 
+    [W3C Markup Validator](https://validator.w3.org/#validate_by_input) and found no errors.
+ 
+   - ![index test](README-images/About_page(index.html).png) 
+     This is the result for index.html.
+ 
+   - ![gallery test](README-images/Gallery_test.png)
+     This is the result for gallery.html.
+ 
+   - ![price test](README-images/Price_test.png)
+     This is the result for price.html using W3C Markup Validator.
+ 
+   - ![contact test](README-images/Contact_test.png)
+     This is the result for contact.html.
 
-- **CSS Validation**: The CSS code was tested using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) with no errors found.
-  
-![CSS Test](README-images/CSS.png)
-
+- CSS 
+  - For testing CSS code, I used [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and found no errors in the code.
+  - ![css test](README-images/CSS_test.png)
+    This is the result for style.css.
 ## Debugging
 Throughout the development of this website, I conducted extensive debugging to ensure functionality and performance. The following methods were employed:
 
 - **Browser Developer Tools**: Utilized the built-in developer tools in browsers such as Chrome and Firefox to inspect elements, identify errors, and test responsive designs in real-time.
 - **Validation Tools**: Employed the [W3C Markup Validator](https://validator.w3.org/) for HTML validation and the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) for CSS validation, ensuring all code adhered to web standards.
 - **Responsive Testing**: Tested the website on various devices and screen sizes to confirm that it is fully responsive, making adjustments where necessary to improve user experience.
+
+## Logo Redirect Fix
+The issue where clicking the logo did not redirect to the home page has been resolved. To implement the fix, I ensured that the logo link in the navigation was correctly structured.
 
 Through this process, I was able to enhance the overall functionality and aesthetic of the website, ensuring it meets high standards of quality and performance.
 
@@ -84,6 +99,23 @@ Through this process, I was able to enhance the overall functionality and aesthe
 - **Gallery**: Showcases a curated selection of images demonstrating Riana's work, designed to inspire and attract prospective clients. The Gallery page features our own portfolio images.
 - **Price Page**: Provides clear information on services and pricing, helping clients make informed decisions about their appointments.
 - **Contact Page**: Features straightforward contact links for inquiries and appointment bookings, ensuring a seamless communication process.
+
+### Internal Links
+
+| Link                | Action                                                        | Result                                    |
+|---------------------|---------------------------------------------------------------|-------------------------------------------|
+| Contact Page        | User clicks on the Contact page in the navigation menu       | User is redirected to the Contact page - works as expected |
+| Home Page           | User clicks on the logo                                        | User is redirected to the Home page - works as expected |
+| Gallery Page        | User clicks on the Gallery page in the navigation menu       | User is redirected to the Gallery page - works as expected |
+| Price Page          | User clicks on the Price page in the navigation menu         | User is redirected to the Price page - works as expected |
+
+### External Links
+
+| Link                | Action                                                        | Result                                    |
+|---------------------|---------------------------------------------------------------|-------------------------------------------|
+| Instagram Link      | User clicks on Instagram link                                 | Redirects to the Instagram page - works as expected |
+| Facebook Link       | User clicks on Facebook link                                  | Redirects to the Facebook page - works as expected |
+| WhatsApp Link       | User clicks on WhatsApp link                                  | Opens WhatsApp chat - works as expected |
 
 ## Deployment
 - **GitHub Pages**: The website is hosted on GitHub Pages. Follow these steps to deploy:

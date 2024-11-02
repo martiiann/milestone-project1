@@ -339,6 +339,50 @@ footer {
   position: relative; /* Position for absolute text */
 }
 
+
+/* Price Section Styles */
+#pricing {
+  color: white; /* Set text color for the pricing section */
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  padding: 40px; /* Padding around the section */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.list-group-item {
+  background: rgba(255, 255, 255, 0.8); /* Background color for list items */
+  color: black; /* Text color for list items */
+}
+
+.separator {
+  height: 2px; /* Match the thickness of the top separator */
+  background-color: #ff69b4; /* Separator color */
+  margin: 15px 0; /* Margin around the separator */
+  border-radius: 5px; /* Rounded edges for the separator */
+}
+
+/* Ensure that clock icons are pink */
+.far.fa-clock {
+  color: #ff69b4; /* Set clock icon color to pink */
+}
+
+.badge {
+  background-color: #ff69b4; /* Badge background color */
+  color: black; /* Badge text color */
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #ff69b4; /* Primary button background color */
+  border-color: #ff69b4; /* Primary button border color */
+}
+
+.btn-primary:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+}
+
 /* Contact Page CSS */
 .booking-text {
   font-size: 32px; /* Consistent with design */
