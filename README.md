@@ -105,7 +105,7 @@ Through this process, I was able to enhance the overall functionality and aesthe
 | Link                | Action                                                        | Result                                    |
 |---------------------|---------------------------------------------------------------|-------------------------------------------|
 | Contact Page        | User clicks on the Contact page in the navigation menu       | User is redirected to the Contact page - works as expected |
-| Home Page           | User clicks on the logo                                        | User is redirected to the Home page - works as expected |
+| About Page          | User clicks on the logo                                        | User is redirected to the About page - works as expected |
 | Gallery Page        | User clicks on the Gallery page in the navigation menu       | User is redirected to the Gallery page - works as expected |
 | Price Page          | User clicks on the Price page in the navigation menu         | User is redirected to the Price page - works as expected |
 
