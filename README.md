@@ -102,6 +102,24 @@ Here are the wireframes for the website:
 | Facebook Link       | User clicks on Facebook link                                  | Redirects to the Facebook page - works as expected |
 | WhatsApp Link       | User clicks on WhatsApp link                                  | Opens WhatsApp chat - works as expected |
 
+### User Stories / User Acceptance Criteria
+
+#### Understand the site’s purpose and navigate easily:
+- **Test**: Verify that the homepage contains a clear introduction and navigational menu options (Home, Gallery, Price, Contact).
+- **Result**: Ensure the homepage conveys the purpose of the site effectively and that all menu links navigate to their correct sections.
+
+#### View pictures of services to confirm quality:
+- **Test**: Confirm that images of services are displayed prominently on the services page or gallery section.
+- **Result**: Images load properly, showcasing the quality of services.
+
+#### See pricing details for services offered:
+- **Test**: Check if a pricing section is available and visible on the price page.
+- **Result**: Pricing details are clear, and no errors occur while viewing the information.
+
+#### Find contact information:
+- **Test**: Confirm that a contact section or page is easily accessible and provides valid phone, email, and address details.
+- **Result**: Contact information is displayed correctly and is easy to locate.
+
 ### Validation Results
 - **HTML Validation**: Each page has been validated using the [W3C Markup Validator](https://validator.w3.org/#validate_by_input) to ensure no syntax errors. Screenshots for validation results are provided below:
   
